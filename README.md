@@ -30,6 +30,26 @@ dsh-deepseek-price/
 
 ## 安装
 
+### 方式零（最简单，推荐）：把仓库地址发给 DSH
+
+把 `https://github.com/oxgbl/dsh-deepseek-price` 复制给你正在使用的 DeepSeek Harness 会话，
+说"安装这个插件"即可。DSH 会自动完成：
+
+1. 从 GitHub 获取仓库文件（`gh api` / git clone / 下载 zip 均可）；
+2. 解压到 `$env:USERPROFILE\.dsh\profiles\node_modules\dsh-deepseek-price`；
+3. 在 profile 的 `cordis.patch.yml`（桌面 `desktop\` / Web `web\`）追加 loader entry；
+4. 提示你重启 DSH Desktop（或 web 进程）。
+
+重启后侧边栏底部出现定价徽标（点击可看详情），会话里可用 `/price` 命令。
+
+> 终端用户也可以直接运行仓库里的 `install.ps1`（克隆或解压后执行）：
+>
+> ```powershell
+> powershell -ExecutionPolicy Bypass -File install.ps1 -Profile desktop   # 或 -Profile web
+> ```
+
+### 手动安装步骤
+
 > ⚠️ 重要：本插件是 **loader entry（客户端模块）格式**，不是 profile bundle。
 > **不要**把它加进 profile 的 `dsh.profile.bundles` 数组——桌面/Web 的启动器
 > 要求该数组里的每个包都声明 `dsh.bundle.patch`（像内置的
