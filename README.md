@@ -1,6 +1,13 @@
-# dsh-deepseek-price
+# dsh-deepseek-price — DeepSeek 价格区间计时工具 ⏱️
 
-DeepSeek Harness 插件：显示当前 DeepSeek API 使用模型价格处于**高峰时段**还是**空闲时段**（低峰时段）。
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/oxgbl/dsh-deepseek-price)](https://github.com/oxgbl/dsh-deepseek-price/releases)
+[![GitHub stars](https://img.shields.io/github/stars/oxgbl/dsh-deepseek-price)](https://github.com/oxgbl/dsh-deepseek-price)
+[![DeepSeek](https://img.shields.io/badge/DeepSeek-API-4d6bfe.svg)](https://api-docs.deepseek.com/)
+
+> ⏱️ **实时掌握 DeepSeek API 高峰/空闲价格区间**：侧边栏徽标 + 距半价倒计时 + 点击详情面板 + `/price` 命令。
+
+DeepSeek Harness 插件：实时显示 DeepSeek API 模型价格处于**高峰时段**还是**空闲时段**（低峰时段），并倒计时下一个**半价时段**。
 
 - **侧边栏实时徽标**：Web 界面左下角常驻显示 `高峰时段`（琥珀色圆点）或 `空闲时段·半价`（绿色圆点）；高峰时徽标直接显示 **“距半价 X小时Y分”倒计时**，悬停可见完整时段信息与价格表，**点击弹出时段详情面板**（当前时段、距半价倒计时、价格表），每 10 秒自动刷新。
 - **`/price` 命令**：在会话中输出当前时段、**距半价时段的时间**、下次切换时间与官方价格表。
