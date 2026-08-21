@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "DeepSeek API 定价时段（高峰/空闲）指示器：侧边栏实时徽标 + /price 命令，依据官方峰谷分时定价（北京时间 9:00-12:00、14:00-18:00 为高峰，其余空闲半价）",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxgbl/dsh-deepseek-price.git"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
