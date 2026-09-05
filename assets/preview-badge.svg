@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" width="560" height="240">
+  <defs>
+    <style>
+      .bg { fill: #f9fafb; }
+      .border { stroke: #e2e5ea; stroke-width: 1; }
+      .dot-peak { fill: #f59e0b; }
+      .dot-off { fill: #10b981; }
+      .text-primary { fill: #1a1d21; font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .text-label { fill: #6c7280; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .text-countdown { fill: #f59e0b; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: bold; }
+      .text-off { fill: #10b981; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: bold; }
+      .bar-cordis { fill: rgba(0,0,0,0.03); stroke: #e2e5ea; stroke-width: 1; rx: 8; }
+      .bar-market { fill: rgba(0,0,0,0.02); stroke: #e2e5ea; stroke-width: 1; rx: 8; }
+      .overflow { opacity: 0.5; }
+      .label { font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #6c7280; }
+      .title { font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #6c7280; text-anchor: middle; }
+      .line { stroke: #e2e5ea; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- 上半部分：高峰状态 -->
+  <rect class="bg" x="0" y="0" width="280" height="55" rx="0"/>
+  <line class="line" x1="0" y1="0" x2="280" y2="0"/>
+  <text x="140" y="14" class="title">高峰时段（侧边栏底部）</text>
+
+  <!-- 徽标按钮 -->
+  <rect x="10" y="24" width="128" height="24" rx="8" fill="rgba(245,158,11,0.08)"/>
+  <circle cx="22" cy="36" r="4" class="dot-peak"/>
+  <circle cx="22" cy="36" r="4" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.3"/>
+  <text x="36" y="39" class="text-countdown">距半价 1小时23分</text>
+
+  <!-- cordis 全宽条（溢出） -->
+  <rect class="bar-cordis" x="138" y="22" width="200" height="28"/>
+  <text x="148" y="40" class="text-label">🧩 Cordis 插件面板</text>
+
+  <!-- 下半部分：空闲状态 -->
+  <rect class="bg" x="0" y="60" width="280" height="55"/>
+  <line class="line" x1="0" y1="60" x2="280" y2="60"/>
+  <text x="140" y="74" class="title">空闲时段（侧边栏底部）</text>
+
+  <!-- 徽标按钮 -->
+  <rect x="10" y="84" width="102" height="24" rx="8" fill="rgba(16,185,129,0.08)"/>
+  <circle cx="22" cy="96" r="4" class="dot-off"/>
+  <circle cx="22" cy="96" r="4" fill="none" stroke="#10b981" stroke-width="2" opacity="0.3"/>
+  <text x="36" y="99" class="text-off">空闲·半价</text>
+
+  <!-- market 全宽条（溢出） -->
+  <rect class="bar-market" x="112" y="82" width="200" height="28"/>
+  <text x="122" y="100" class="text-label">📦 插件市场</text>
+</svg>
