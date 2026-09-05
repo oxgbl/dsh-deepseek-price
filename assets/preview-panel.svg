@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 260" width="680" height="520">
+  <defs>
+    <style>
+      .panel-bg { fill: #ffffff; }
+      .panel-border { stroke: #d8dee7; stroke-width: 1; rx: 12; }
+      .shadow { fill: rgba(0,0,0,0.28); rx: 12; }
+      .title { font-size: 13px; font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #1a1d21; }
+      .text { font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #1a1d21; }
+      .text-secondary { font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #6c7280; }
+      .text-amber { font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #f59e0b; font-weight: bold; }
+      .text-green { font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #10b981; font-weight: bold; }
+      .text-mono { font-size: 11px; font-family: 'SF Mono', 'Consolas', monospace; fill: #1a1d21; }
+    </style>
+  </defs>
+
+  <!-- 阴影 -->
+  <rect class="shadow" x="3" y="3" width="340" height="260"/>
+  <!-- 面板主体 -->
+  <rect class="panel-bg panel-border" x="0" y="0" width="340" height="260"/>
+
+  <text x="14" y="24" class="title">DeepSeek API 定价 · 北京时间 2026-08-21 17:50:00</text>
+  <text x="14" y="48" class="text">当前：高峰时段（价格全额）</text>
+  <text x="14" y="68" class="text-amber">距空闲（半价）时段：约 1 小时 23 分（18:00 切换）</text>
+  <text x="14" y="88" class="text-secondary">高峰时段：周一至周五 09:00–12:00、14:00–18:00（周末全天空闲，价格减半）</text>
+
+  <line x1="14" y1="102" x2="326" y2="102" stroke="#e2e5ea" stroke-width="1"/>
+
+  <text x="14" y="120" class="text">价格（元/百万 tokens，空闲 / 高峰）：</text>
+
+  <text x="14" y="140" class="text-mono">DeepSeek-V4-Flash</text>
+  <text x="14" y="156" class="text-mono">  输入(命中) 0.05/0.1  输入(未命中) 1.5/3.0  输出 4.5/9.0</text>
+
+  <text x="14" y="176" class="text-mono">DeepSeek-V4-Pro</text>
+  <text x="14" y="192" class="text-mono">  输入(命中) 0.15/0.3  输入(未命中) 4.5/9.0  输出 13.5/27.0</text>
+
+  <text x="14" y="212" class="text-mono">DeepSeek-V4-Flash-Vision-Exp</text>
+  <text x="14" y="228" class="text-mono">  输入(命中) 0.05/0.1  输入(未命中) 1.5/3.0  输出 4.5/9.0</text>
+
+  <text x="14" y="250" class="text-secondary">数据来源：https://api-docs.deepseek.com/zh-cn/quick_start/pricing/</text>
+</svg>
